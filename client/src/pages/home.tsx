@@ -213,7 +213,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-xs text-gray-400 dark:text-gray-500 leading-relaxed text-center" data-testid="text-hero-description">
-                Se você já tentou ajustar a alimentação do seu cão sem ver resultado — ou ainda não começou por não saber onde pôr a mão — este <span className="font-semibold text-gray-400 dark:text-gray-500">Guia de Alimentação Natural para Cães</span> será o seu roteiro prático, passo a passo, mais simples do que você imagina. Com métodos comprovados e fáceis de aplicar, você vai melhorar a energia, a digestão e o comportamento do seu cão em poucos dias — e perceber mudanças reais na rotina de vocês sem complicação.
+                Se você já tentou ajustar a alimentação do seu cão sem ver resultado — ou ainda não começou por não saber onde pôr a mão — este <span className="font-semibold text-success">Guia de Alimentação Natural para Cães</span> será o seu roteiro prático, passo a passo, mais simples do que você imagina. Com métodos comprovados e fáceis de aplicar, você vai melhorar a energia, a digestão e o comportamento do seu cão em poucos dias — e perceber mudanças reais na rotina de vocês sem complicação.
               </p>
             </div>
           </div>
@@ -452,7 +452,7 @@ export default function Home() {
                 <div className="flex items-start gap-3" data-testid="item-benefit-0">
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-foreground font-bold text-base md:text-lg">
+                    <p className="text-success font-bold text-base md:text-lg">
                       Guia de Alimentação Natural para Cães
                     </p>
                   </div>
