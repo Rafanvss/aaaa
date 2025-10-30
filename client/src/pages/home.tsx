@@ -91,12 +91,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Arrow indicator */}
-      <div className="flex justify-center py-8 bg-gradient-to-br from-primary/10 via-success/10 to-background">
-        <ArrowDown className="w-12 h-12 text-primary animate-bounce" data-testid="icon-arrow-down-content" />
-      </div>
+        {/* Arrow indicator */}
+        <div className="flex justify-center py-8 bg-background">
+          <ArrowDown className="w-12 h-12 text-primary animate-bounce" data-testid="icon-arrow-down-content" />
+        </div>
+      </section>
 
       {/* What You'll Learn Section */}
       <section className="pb-20 md:pb-24 bg-gradient-to-br from-primary/10 via-success/10 to-background relative overflow-hidden">
