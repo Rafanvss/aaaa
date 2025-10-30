@@ -40,7 +40,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground"
+                className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground"
                 data-testid="heading-hero"
               >
                 Mesmo escolhendo a ração certa, ele continua <span className="text-primary">sem energia</span>, <span className="text-primary">ganhando peso</span>, com <span className="text-primary">problemas digestivos</span> ou <span className="text-primary">problemas de pele</span>? <span className="text-success">Tem jeito, e é mais simples do que você imagina!</span>
