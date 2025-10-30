@@ -249,16 +249,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Results Carousel Section */}
-      <section className="py-8 md:py-12 bg-gradient-to-br from-success/5 to-background">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-results">
-            Veja as <span className="text-success underline">Transformações</span> de Alguns Cães
-          </h2>
-          <ResultsCarousel />
-        </div>
-      </section>
-
       {/* For Who Section */}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
@@ -283,6 +273,16 @@ export default function Home() {
               <p className="text-lg font-bold text-foreground">Acredita que <span className="text-success">amor também se demonstra</span> no cuidado diário com o que seu cão come.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Results Carousel Section */}
+      <section className="py-8 md:py-12 bg-gradient-to-br from-success/5 to-background">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-results">
+            Veja as <span className="text-success underline">Transformações</span> de Alguns Cães
+          </h2>
+          <ResultsCarousel />
         </div>
       </section>
 
