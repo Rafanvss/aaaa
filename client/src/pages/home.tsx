@@ -424,7 +424,7 @@ export default function Home() {
 
           {/* Arrow indicator */}
           <div className="flex justify-center mt-12">
-            <ArrowDown className="w-12 h-12 text-success" data-testid="icon-arrow-down" />
+            <ArrowDown className="w-12 h-12 text-primary" data-testid="icon-arrow-down" />
           </div>
         </div>
       </section>
