@@ -493,7 +493,7 @@ export default function Home() {
                   Por Apenas:
                 </div>
                 <div className="text-6xl md:text-7xl font-bold text-success" data-testid="text-price-new">
-                  <span className="text-3xl md:text-4xl">R$</span> 14<sup className="text-4xl">,90</sup>
+                  <sup className="text-3xl md:text-4xl">R$</sup> 14<sup className="text-4xl">,90</sup>
                 </div>
               </div>
 
