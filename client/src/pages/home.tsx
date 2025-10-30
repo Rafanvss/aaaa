@@ -47,7 +47,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="space-y-6">
-              <div className="relative aspect-square overflow-hidden shadow-2xl">
+              <div className="relative aspect-square overflow-hidden shadow-2xl rounded-lg">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
                 <img 
                   src={heroImage} 
