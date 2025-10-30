@@ -20,6 +20,8 @@ import {
   Scale,
   Shield,
   Star,
+  X,
+  ArrowRight,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
 
@@ -138,28 +140,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Before & After Section */}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-testid="heading-benefits">
-            O que muda na rotina do seu cão
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" data-testid="heading-benefits">
+            A Transformação do Seu Cão
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { icon: Activity, title: "Melhora na digestão", color: "text-success" },
-              { icon: Heart, title: "Mais energia e disposição", color: "text-primary" },
-              { icon: Shield, title: "Redução de alergias", color: "text-success" },
-              { icon: Scale, title: "Fim da obesidade", color: "text-primary" },
-              { icon: Shirt, title: "Pelagem mais bonita", color: "text-success" },
-              { icon: Apple, title: "Alimentação 100% saudável e equilibrada", color: "text-primary" },
-            ].map((benefit, index) => (
-              <Card key={index} className="hover-elevate transition-all" data-testid={`card-benefit-${index}`}>
-                <CardContent className="pt-6 pb-6 text-center space-y-4">
-                  <benefit.icon className={`w-12 h-12 ${benefit.color} mx-auto`} />
-                  <h3 className="text-lg font-semibold">{benefit.title}</h3>
-                </CardContent>
-              </Card>
-            ))}
+          <p className="text-center text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Veja como a alimentação natural pode mudar completamente a vida do seu melhor amigo
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* ANTES */}
+            <Card className="border-2" data-testid="card-before">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center space-y-2">
+                  <Badge variant="destructive" className="text-base px-4 py-2" data-testid="badge-before">
+                    ANTES
+                  </Badge>
+                  <h3 className="text-2xl font-bold">Como Está Agora</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  {[
+                    "Digestão lenta e desconforto",
+                    "Baixa energia e disposição",
+                    "Alergias e coceiras frequentes",
+                    "Sobrepeso ou obesidade",
+                    "Pelagem opaca e sem brilho",
+                    "Ração industrializada e processada",
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3" data-testid={`item-before-${index}`}>
+                      <X className="w-5 h-5 text-destructive flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* DEPOIS */}
+            <Card className="border-2 border-success/50 bg-gradient-to-br from-success/5 to-background" data-testid="card-after">
+              <CardContent className="p-8 space-y-6">
+                <div className="text-center space-y-2">
+                  <Badge className="text-base px-4 py-2 bg-gradient-to-r from-success to-primary text-white" data-testid="badge-after">
+                    DEPOIS
+                  </Badge>
+                  <h3 className="text-2xl font-bold">Com o Guia</h3>
+                </div>
+                
+                <div className="space-y-4">
+                  {[
+                    "Digestão perfeita e saudável",
+                    "Muita energia e vitalidade",
+                    "Pele saudável, sem alergias",
+                    "Peso ideal e corpo saudável",
+                    "Pelagem brilhante e sedosa",
+                    "Alimentação 100% natural",
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start gap-3" data-testid={`item-after-${index}`}>
+                      <CheckCircle2 className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground font-medium">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Arrow indicator for mobile */}
+          <div className="flex justify-center mt-8 md:hidden">
+            <ArrowRight className="w-8 h-8 text-success" data-testid="icon-arrow-transformation" />
           </div>
         </div>
       </section>
