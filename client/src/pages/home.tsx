@@ -147,10 +147,10 @@ export default function Home() {
           <div className="absolute top-6 left-0 right-0 h-12 bg-gradient-to-r from-primary via-primary to-primary/90 transform -rotate-2 overflow-hidden">
             <div className="animated-banner flex items-center h-full whitespace-nowrap">
               <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
-                ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
+                ALIMENTAÇÃO NATURAL • GUIA COMPLETO • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
               </span>
               <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
-                ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
+                ALIMENTAÇÃO NATURAL • GUIA COMPLETO • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
               </span>
             </div>
           </div>
