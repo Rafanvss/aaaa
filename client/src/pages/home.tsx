@@ -130,19 +130,6 @@ function ResultsCarousel() {
       >
         <ChevronRight className="w-6 h-6" />
       </Button>
-
-      <div className="flex justify-center gap-2 mt-6">
-        {resultsImages.map((_, index) => (
-          <button
-            key={index}
-            className={`w-2 h-2 rounded-full transition-all ${
-              index === selectedIndex ? 'bg-success w-8' : 'bg-muted-foreground/30'
-            }`}
-            onClick={() => emblaApi?.scrollTo(index)}
-            data-testid={`carousel-dot-${index}`}
-          />
-        ))}
-      </div>
     </div>
   );
 }
