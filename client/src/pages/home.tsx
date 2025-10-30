@@ -176,7 +176,7 @@ export default function Home() {
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-for-who">
-            O Guia é para você que:
+            <span className="text-success underline">O Guia</span> é para você que:
           </h2>
           <div className="space-y-6">
             <div className="flex items-start gap-4" data-testid="item-for-who-0">
