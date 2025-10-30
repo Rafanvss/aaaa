@@ -91,11 +91,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Arrow indicator */}
-        <div className="flex justify-center mt-12">
-          <ArrowDown className="w-12 h-12 text-success" data-testid="icon-arrow-down-banners" />
-        </div>
       </section>
 
       {/* What You'll Learn Section */}
