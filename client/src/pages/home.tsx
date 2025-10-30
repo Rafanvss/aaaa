@@ -37,23 +37,15 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-success/5 to-background py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div>
               <h1 
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground"
                 data-testid="heading-hero"
               >
                 Mesmo escolhendo a ração certa, ele continua <span className="text-primary">sem energia</span>, <span className="text-primary">ganhando peso</span>, com <span className="text-primary">problemas digestivos</span> ou <span className="text-primary">problemas de pele</span>? <span className="text-success">Tem jeito, e é mais simples do que você imagina!</span>
               </h1>
-              <Button
-                size="lg"
-                onClick={scrollToOffer}
-                className="text-lg px-8 py-6 bg-gradient-to-r from-success to-primary shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
-                data-testid="button-hero-cta"
-              >
-                Quero o Guia Agora
-              </Button>
             </div>
-            <div className="relative">
+            <div className="space-y-6">
               <div className="relative aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
                 <img 
@@ -63,6 +55,14 @@ export default function Home() {
                   data-testid="image-hero"
                 />
               </div>
+              <Button
+                size="lg"
+                onClick={scrollToOffer}
+                className="w-full text-lg px-8 py-6 bg-gradient-to-r from-success to-primary shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
+                data-testid="button-hero-cta"
+              >
+                Quero o Guia Agora
+              </Button>
             </div>
           </div>
         </div>
