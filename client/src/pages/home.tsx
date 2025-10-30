@@ -261,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* Results Carousel Section */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-success/5 to-background">
+      <section className="py-8 md:py-12 bg-gradient-to-br from-success/5 to-background">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-results">
             Veja os resultados do pessoal
