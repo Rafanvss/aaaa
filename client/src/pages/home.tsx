@@ -42,7 +42,7 @@ export default function Home() {
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground"
                 data-testid="heading-hero"
               >
-                Descubra o método natural para alimentar seu cão com saúde e energia todos os dias!
+                Mesmo escolhendo a ração certa, ele continua sem energia, ganhando peso, com problemas digestivos ou problemas de pele?
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground">
                 Aprenda passo a passo como montar o cardápio ideal, evitar erros e garantir mais anos de vida ao seu melhor amigo.
