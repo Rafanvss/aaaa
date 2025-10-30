@@ -28,6 +28,7 @@ import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl
 import beforeAfter1 from "@assets/Copilot_20251030_175945_1761859629119.png";
 import beforeAfter2 from "@assets/Copilot_20251030_181115_1761859631709.png";
 import beforeAfter3 from "@assets/Copilot_20251030_181921_1761859634222.png";
+import sadDogImage from "@assets/image_1761868191885.png";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import useEmblaCarousel from "embla-carousel-react";
@@ -255,6 +256,14 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-for-who">
             <span className="text-success underline">O Guia</span> é para você que:
           </h2>
+          <div className="mb-8">
+            <img 
+              src={sadDogImage} 
+              alt="Cachorro triste"
+              className="w-full rounded-lg shadow-lg"
+              data-testid="image-sad-dog"
+            />
+          </div>
           <div className="space-y-6">
             <div className="flex items-start gap-4" data-testid="item-for-who-0">
               <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
