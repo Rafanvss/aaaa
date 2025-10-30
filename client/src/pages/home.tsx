@@ -172,6 +172,28 @@ export default function Home() {
         </div>
       </section>
 
+      {/* For Who Section */}
+      <section className="py-20 md:py-24 bg-background">
+        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-for-who">
+            O Guia é para você que:
+          </h2>
+          <div className="space-y-6">
+            {[
+              "Quer oferecer uma alimentação mais natural e equilibrada para seu cão, mas não sabe por onde começar.",
+              "Se preocupa de verdade com a saúde, o bem-estar e a longevidade do seu pet.",
+              "Quer entender o que realmente faz bem — e o que deve ser evitado de vez.",
+              "Acredita que amor também se demonstra no cuidado diário com o que seu cão come."
+            ].map((item, index) => (
+              <div key={index} className="flex items-start gap-4" data-testid={`item-for-who-${index}`}>
+                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+                <p className="text-lg text-foreground">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* What You'll Learn Section */}
       <section className="pb-20 md:pb-24 bg-background relative overflow-hidden">
         <div className="pt-2 bg-background"></div>
