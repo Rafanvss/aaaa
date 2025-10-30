@@ -25,8 +25,13 @@ import {
   ArrowDown,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
+import beforeAfter1 from "@assets/Copilot_20251030_175945_1761859629119.png";
+import beforeAfter2 from "@assets/Copilot_20251030_181115_1761859631709.png";
+import beforeAfter3 from "@assets/Copilot_20251030_181921_1761859634222.png";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
+import useEmblaCarousel from "embla-carousel-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const nomes = [
   "Maria Silva",
@@ -58,6 +63,89 @@ const cidades = [
   "Recife - PE",
   "Goiânia - GO",
 ];
+
+const resultsImages = [
+  { src: beforeAfter1, alt: "Transformação cachorro 1" },
+  { src: beforeAfter2, alt: "Transformação cachorro 2" },
+  { src: beforeAfter3, alt: "Transformação cachorro 3" },
+];
+
+function ResultsCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on('select', onSelect);
+    onSelect();
+
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi]);
+
+  return (
+    <div className="relative">
+      <div className="overflow-hidden" ref={emblaRef} data-testid="carousel-results">
+        <div className="flex gap-4">
+          {resultsImages.map((image, index) => (
+            <div key={index} className="flex-[0_0_100%] md:flex-[0_0_80%] min-w-0" data-testid={`carousel-slide-${index}`}>
+              <div className="mx-auto max-w-3xl">
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full rounded-lg shadow-xl"
+                  data-testid={`image-result-${index}`}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <Button
+        size="icon"
+        variant="outline"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm"
+        onClick={scrollPrev}
+        data-testid="button-carousel-prev"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </Button>
+      
+      <Button
+        size="icon"
+        variant="outline"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm"
+        onClick={scrollNext}
+        data-testid="button-carousel-next"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </Button>
+
+      <div className="flex justify-center gap-2 mt-6">
+        {resultsImages.map((_, index) => (
+          <button
+            key={index}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === selectedIndex ? 'bg-success w-8' : 'bg-muted-foreground/30'
+            }`}
+            onClick={() => emblaApi?.scrollTo(index)}
+            data-testid={`carousel-dot-${index}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const [notifications, setNotifications] = useState<Array<{ id: number; nome: string; cidade: string }>>([]);
@@ -169,6 +257,16 @@ export default function Home() {
         {/* Arrow indicator */}
         <div className="flex justify-center pt-16 pb-2 bg-background">
           <ArrowDown className="w-12 h-12 text-primary" data-testid="icon-arrow-down-content" />
+        </div>
+      </section>
+
+      {/* Results Carousel Section */}
+      <section className="py-20 md:py-24 bg-gradient-to-br from-success/5 to-background">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-results">
+            Veja os resultados do pessoal
+          </h2>
+          <ResultsCarousel />
         </div>
       </section>
 
