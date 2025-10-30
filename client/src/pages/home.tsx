@@ -100,7 +100,7 @@ export default function Home() {
             <Badge className="text-lg px-6 py-2 bg-gradient-to-r from-success to-primary text-white shadow-lg" data-testid="badge-content">
               CONTEÚDO COMPLETO
             </Badge>
-            <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent" data-testid="heading-what-learn">
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground" data-testid="heading-what-learn">
               O Que Você Vai Aprender
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
