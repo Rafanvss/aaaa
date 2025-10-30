@@ -99,9 +99,8 @@ export default function Home() {
             data-testid={`notification-${notification.id}`}
           >
             <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
-            <div className="text-sm">
-              <div className="font-semibold">{notification.nome}</div>
-              <div className="text-xs opacity-90">{notification.cidade} acabou de adquirir o guia!</div>
+            <div className="text-sm font-semibold">
+              {notification.nome} acabou de adquirir o guia!
             </div>
           </div>
         ))}
