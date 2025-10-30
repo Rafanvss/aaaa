@@ -104,7 +104,7 @@ export default function Home() {
               O Que Você Vai Aprender
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tudo que você precisa para transformar a alimentação do seu cão
+              Tudo que você vai aprender no nosso guia de alimentação natural para cães
             </p>
           </div>
           
