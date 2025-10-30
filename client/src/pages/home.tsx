@@ -25,8 +25,64 @@ import {
   ArrowDown,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
+import { useState, useEffect } from "react";
+
+const nomes = [
+  "Maria Silva",
+  "João Santos",
+  "Ana Costa",
+  "Pedro Oliveira",
+  "Carla Souza",
+  "Roberto Lima",
+  "Juliana Alves",
+  "Fernando Rocha",
+  "Patricia Mendes",
+  "Ricardo Ferreira",
+  "Beatriz Ribeiro",
+  "Lucas Martins",
+  "Amanda Cardoso",
+  "Gabriel Pereira",
+  "Fernanda Dias",
+];
+
+const cidades = [
+  "São Paulo - SP",
+  "Rio de Janeiro - RJ",
+  "Belo Horizonte - MG",
+  "Curitiba - PR",
+  "Porto Alegre - RS",
+  "Salvador - BA",
+  "Brasília - DF",
+  "Fortaleza - CE",
+  "Recife - PE",
+  "Goiânia - GO",
+];
 
 export default function Home() {
+  const [notifications, setNotifications] = useState<Array<{ id: number; nome: string; cidade: string }>>([]);
+
+  useEffect(() => {
+    const showNotification = () => {
+      const nome = nomes[Math.floor(Math.random() * nomes.length)];
+      const cidade = cidades[Math.floor(Math.random() * cidades.length)];
+      const id = Date.now();
+
+      setNotifications(prev => [...prev, { id, nome, cidade }]);
+
+      setTimeout(() => {
+        setNotifications(prev => prev.filter(n => n.id !== id));
+      }, 4000);
+    };
+
+    const interval = setInterval(() => {
+      showNotification();
+    }, 5000);
+
+    setTimeout(() => showNotification(), 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const scrollToOffer = () => {
     const offerSection = document.getElementById('offer-section');
     offerSection?.scrollIntoView({ behavior: 'smooth' });
@@ -34,6 +90,22 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Purchase Notifications */}
+      <div className="fixed bottom-4 left-4 z-50 space-y-2" data-testid="notifications-container">
+        {notifications.map((notification) => (
+          <div
+            key={notification.id}
+            className="bg-success text-success-foreground px-4 py-3 rounded-lg shadow-lg flex items-center gap-3 animate-in slide-in-from-left-5"
+            data-testid={`notification-${notification.id}`}
+          >
+            <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
+            <div className="text-sm">
+              <div className="font-semibold">{notification.nome}</div>
+              <div className="text-xs opacity-90">{notification.cidade} acabou de adquirir o guia!</div>
+            </div>
+          </div>
+        ))}
+      </div>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-success/5 to-background py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
