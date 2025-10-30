@@ -95,16 +95,6 @@ function ResultsCarousel() {
   return (
     <div className="max-w-3xl mx-auto">
       <div className="relative group">
-        <Button
-          size="icon"
-          variant="outline"
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-white border-0 h-12 w-12 rounded-full transition-all z-20"
-          onClick={scrollPrev}
-          data-testid="button-carousel-prev"
-        >
-          <ChevronLeft className="w-6 h-6" />
-        </Button>
-        
         <div className="overflow-hidden" ref={emblaRef} data-testid="carousel-results">
           <div className="flex">
             {resultsImages.map((image, index) => (
@@ -120,15 +110,27 @@ function ResultsCarousel() {
           </div>
         </div>
         
-        <Button
-          size="icon"
-          variant="outline"
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black/90 text-white border-0 h-12 w-12 rounded-full transition-all z-20"
-          onClick={scrollNext}
-          data-testid="button-carousel-next"
-        >
-          <ChevronRight className="w-6 h-6" />
-        </Button>
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-4">
+          <Button
+            size="icon"
+            variant="outline"
+            className="pointer-events-auto bg-black/70 hover:bg-black/90 text-white border-0 h-12 w-12 rounded-full transition-all"
+            onClick={scrollPrev}
+            data-testid="button-carousel-prev"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </Button>
+          
+          <Button
+            size="icon"
+            variant="outline"
+            className="pointer-events-auto bg-black/70 hover:bg-black/90 text-white border-0 h-12 w-12 rounded-full transition-all"
+            onClick={scrollNext}
+            data-testid="button-carousel-next"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </Button>
+        </div>
       </div>
     </div>
   );
