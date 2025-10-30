@@ -244,13 +244,13 @@ export default function Home() {
         </div>
 
         {/* Arrow indicator */}
-        <div className="flex justify-center pt-16 pb-2 bg-background">
+        <div className="flex justify-center pt-8 pb-2 bg-background">
           <ArrowDown className="w-12 h-12 text-primary" data-testid="icon-arrow-down-content" />
         </div>
       </section>
 
       {/* For Who Section */}
-      <section className="py-20 md:py-24 bg-background">
+      <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-for-who">
             <span className="text-success underline">O Guia</span> é para você que:
