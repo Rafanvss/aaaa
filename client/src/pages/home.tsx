@@ -166,6 +166,15 @@ export default function Home() {
                     Com Ração Industrial
                   </Badge>
                 </div>
+
+                <div className="w-full aspect-video rounded-lg overflow-hidden">
+                  <img 
+                    src="https://cakto-quiz-br01.b-cdn.net/uploads/d36cec69-ae36-454f-8c52-005f9b99f346.jpg"
+                    alt="Cachorro com ração industrial"
+                    className="w-full h-full object-cover"
+                    data-testid="image-industrial-food"
+                  />
+                </div>
                 
                 <div className="space-y-4">
                   {[
@@ -192,6 +201,15 @@ export default function Home() {
                   <Badge className="text-base px-4 py-2 bg-gradient-to-r from-success to-primary text-white" data-testid="badge-after">
                     Com Alimentação Natural
                   </Badge>
+                </div>
+
+                <div className="w-full aspect-video rounded-lg overflow-hidden">
+                  <img 
+                    src="https://cakto-quiz-br01.b-cdn.net/uploads/f453bbdf-64c6-47a8-82e2-4ff771fe13e6.jpg"
+                    alt="Cachorro com alimentação natural"
+                    className="w-full h-full object-cover"
+                    data-testid="image-natural-food"
+                  />
                 </div>
                 
                 <div className="space-y-4">
