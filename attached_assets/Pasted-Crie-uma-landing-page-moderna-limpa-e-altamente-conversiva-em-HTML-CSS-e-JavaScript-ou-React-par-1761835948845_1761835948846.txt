@@ -1,0 +1,166 @@
+Crie uma landing page moderna, limpa e altamente conversiva em HTML, CSS e JavaScript (ou React) para vender um produto digital chamado “Guia de Alimentação Saudável para Cães”.
+
+O estilo deve ser inspirado no site “Hack do iFood”, mas sem precisar acessá-lo.
+Abaixo está o guia detalhado de design, estrutura e copy que devem ser seguidos:
+
+🎨 ESTILO VISUAL
+
+Página one page, com blocos verticais grandes e espaçamento amplo.
+
+Fundo branco, com degradês suaves em tons de azul e verde para destacar áreas importantes.
+
+Tipografia grande e moderna (ex: Poppins ou Inter).
+
+Botões arredondados com degradê verde→azul, sombra suave e destaque visual.
+
+Imagens realistas ou ilustrações de cães saudáveis e felizes com seus tutores.
+
+Animações suaves de entrada e rolagem.
+
+Design mobile-first, totalmente responsivo.
+
+🧱 ESTRUTURA DA PÁGINA
+
+1. Cabeçalho (Hero Section)
+
+Headline grande e forte:
+“Descubra o método natural para alimentar seu cão com saúde e energia todos os dias!”
+
+Subheadline:
+“Aprenda passo a passo como montar o cardápio ideal, evitar erros e garantir mais anos de vida ao seu melhor amigo.”
+
+Botão de destaque: “Quero o Guia Agora” (âncora para a oferta).
+
+Imagem ilustrando um cachorro feliz ao lado de uma tigela de comida natural e colorida.
+
+2. Como Funciona o Guia
+
+Texto curto:
+“Um passo a passo simples e prático para entender o que realmente faz bem ao seu cão.
+Descubra os alimentos certos, monte cardápios equilibrados e aprenda receitas caseiras que melhoram a saúde do seu pet.”
+
+Três ícones com rótulos:
+“Aprenda”, “Aplique”, “Veja Resultados”.
+
+3. O que Você Vai Aprender com o Guia ✅
+
+Título: “O que você vai aprender com o guia:”
+
+Liste os tópicos em formato visual limpo, com ícones de check verde:
+
+Introdução à Alimentação Natural
+
+Alimentos Permitidos e Proibidos
+
+Receitas Caseiras e Saudáveis
+
+Como Montar o Cardápio do Seu Pet
+
+Hidratação e Cuidados Extras
+
+Suplementos Naturais e Vitaminas
+
++3 Bônus exclusivos
+
+4. Benefícios da Alimentação Natural
+
+Título: “O que muda na rotina do seu cão”
+
+6 bullets com ícones ilustrados:
+
+Melhora na digestão
+
+Mais energia e disposição
+
+Redução de alergias
+
+Fim da obesidade
+
+Pelagem mais bonita
+
+Alimentação 100% saudável e equilibrada
+
+5. Oferta Principal (Produto Único)
+
+Bloco de destaque com sombra suave e contorno leve.
+
+Título: “Oferta Especial — Somente Hoje”
+
+Preço riscado: R$49,90
+
+Novo preço em destaque: R$14,90
+
+Texto abaixo: “Acesso imediato ao guia completo e conteúdo passo a passo.”
+
+Botão CTA grande e chamativo: “Quero Garantir o Meu Agora”
+
+Inclua um contador regressivo de 24h que reinicia automaticamente todos os dias às 23h.
+
+6. Depoimentos (Prova Social)
+
+3 avaliações curtas e reais, estilo post de rede social:
+
+Foto de perfil (rosto casual).
+
+Nome + 5 estrelas.
+
+Depoimentos curtos:
+
+“Meu cachorro finalmente come sem enjoar da comida!”
+
+“Em duas semanas já notei melhora na energia e no pelo!”
+
+“Guia fácil, direto e vale muito mais que o preço.”
+
+7. Garantia e Segurança
+
+Bloco com fundo verde claro e ícones de escudo e check.
+
+Texto:
+“Compra protegida | Acesso imediato | Garantia de 7 dias.”
+
+8. FAQ (Perguntas Frequentes)
+
+“Como recebo o guia?”
+
+“Serve para todas as raças?”
+
+“Tem receitas caseiras?”
+
+“Posso acessar pelo celular?”
+
+9. Rodapé
+
+Texto simples e limpo:
+“© 2025 – Todos os direitos reservados.”
+
+Links: Termos de Uso | Política de Privacidade | Suporte.
+
+⚙️ ESPECIFICAÇÕES TÉCNICAS
+
+Totalmente responsivo (mobile-first).
+
+Paleta de cores:
+
+Azul #3A8DFF
+
+Verde #35C48F
+
+Branco #FFFFFF
+
+Cinza texto #444444
+
+Animações suaves no scroll e hover.
+
+Código leve e otimizado.
+
+🗣️ TOM E EMOÇÃO DA COPY
+
+Linguagem natural, empática e confiante.
+
+Escreva como se fosse um tutor apaixonado compartilhando uma descoberta que melhorou a vida do próprio cachorro.
+
+Mostre transformação e praticidade:
+“Você não precisa ser especialista — só seguir o passo a passo certo.”
+
+Objetivo final: gerar conversões diretas para a compra do Guia de Alimentação Saudável para Cães por R$14,90, transmitindo confiança, praticidade e resultado real.
