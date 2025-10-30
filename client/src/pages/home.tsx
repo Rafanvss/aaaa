@@ -310,8 +310,8 @@ export default function Home() {
               { title: "Suplementos Naturais e Vitaminas", icon: Sparkles },
             ].map((item, index) => (
               <Card key={index} className="hover-elevate transition-all border-2" data-testid={`item-learn-${index}`}>
-                <CardContent className="p-6 space-y-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center">
+                <CardContent className="p-6 flex items-center gap-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
