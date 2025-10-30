@@ -293,7 +293,7 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
           <div className="text-center mb-12 space-y-4 py-8">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground" data-testid="heading-what-learn">
-              O Que Você Vai Aprender
+              O Que Você vai <span className="text-success underline">Aprender</span> com o Guia
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Tudo que você vai aprender no nosso guia de alimentação natural para cães
