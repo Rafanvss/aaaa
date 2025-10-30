@@ -252,6 +252,11 @@ export default function Home() {
               >
                 Quero Garantir o Meu Agora
               </Button>
+
+              <div className="flex items-center justify-center gap-2 text-muted-foreground" data-testid="secure-purchase">
+                <Shield className="w-5 h-5 text-success" />
+                <span className="text-sm font-medium">Compra 100% Segura</span>
+              </div>
             </CardContent>
           </Card>
         </div>
