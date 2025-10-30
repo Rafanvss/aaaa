@@ -253,7 +253,7 @@ export default function Home() {
       <section className="py-8 md:py-12 bg-gradient-to-br from-success/5 to-background">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-results">
-            Veja os <span className="text-success underline">Resultados</span> do Pessoal
+            Veja as <span className="text-success underline">Transformações</span> de Alguns Cães
           </h2>
           <ResultsCarousel />
         </div>
