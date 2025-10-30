@@ -22,6 +22,7 @@ import {
   Star,
   X,
   ArrowRight,
+  ArrowDown,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
 
@@ -188,9 +189,9 @@ export default function Home() {
             </Card>
           </div>
 
-          {/* Arrow indicator for mobile */}
-          <div className="flex justify-center mt-8 md:hidden">
-            <ArrowRight className="w-8 h-8 text-success" data-testid="icon-arrow-transformation" />
+          {/* Arrow indicator */}
+          <div className="flex justify-center mt-12">
+            <ArrowDown className="w-12 h-12 text-success animate-bounce" data-testid="icon-arrow-down" />
           </div>
         </div>
       </section>
