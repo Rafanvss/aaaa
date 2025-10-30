@@ -24,7 +24,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
-import introImage from "@assets/image_1761837722802.png";
 
 export default function Home() {
   const scrollToOffer = () => {
@@ -129,27 +128,15 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {/* Primeiro card com imagem */}
-            <Card className="hover-elevate transition-all border-2 overflow-hidden lg:col-span-2" data-testid="item-learn-0">
-              <CardContent className="p-0">
-                <img 
-                  src={introImage} 
-                  alt="Introdução à Alimentação Natural: Entenda os princípios e benefícios da alimentação natural"
-                  className="w-full h-full object-cover"
-                  data-testid="image-intro"
-                />
-              </CardContent>
-            </Card>
-
-            {/* Demais cards */}
             {[
+              { title: "Introdução à Alimentação Natural", icon: BookOpen },
               { title: "Alimentos Permitidos e Proibidos", icon: Shield },
               { title: "Receitas Caseiras e Saudáveis", icon: Apple },
               { title: "Como Montar o Cardápio do Seu Pet", icon: Heart },
               { title: "Hidratação e Cuidados Extras", icon: Activity },
               { title: "Suplementos Naturais e Vitaminas", icon: Sparkles },
             ].map((item, index) => (
-              <Card key={index + 1} className="hover-elevate transition-all border-2" data-testid={`item-learn-${index + 1}`}>
+              <Card key={index} className="hover-elevate transition-all border-2" data-testid={`item-learn-${index}`}>
                 <CardContent className="p-6 space-y-3">
                   <div className="w-12 h-12 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center">
                     <item.icon className="w-6 h-6 text-white" />
