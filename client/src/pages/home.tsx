@@ -503,7 +503,7 @@ export default function Home() {
                 className="w-full text-xl py-7 bg-gradient-to-r from-success to-primary shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
                 data-testid="button-offer-cta"
               >
-                Quero Garantir o Meu Agora
+                Quero Começar Hoje!
               </Button>
 
               <div className="flex items-center justify-center gap-2 text-muted-foreground" data-testid="secure-purchase">
