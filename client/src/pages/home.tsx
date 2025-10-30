@@ -93,15 +93,15 @@ export default function Home() {
         </div>
 
         {/* Arrow indicator */}
-        <div className="flex justify-center pt-16 pb-4 bg-background">
+        <div className="flex justify-center pt-16 pb-2 bg-background">
           <ArrowDown className="w-12 h-12 text-primary animate-bounce" data-testid="icon-arrow-down-content" />
         </div>
       </section>
 
       {/* What You'll Learn Section */}
       <section className="pb-20 md:pb-24 bg-background relative overflow-hidden">
-        <div className="pt-20 bg-background"></div>
-        <div className="bg-gradient-to-br from-primary/10 via-success/10 to-background pt-12">
+        <div className="pt-2 bg-background"></div>
+        <div className="bg-gradient-to-br from-primary/10 via-success/10 to-background pt-2">
           <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
           <div className="text-center mb-12 space-y-4">
             <Badge className="text-lg px-6 py-2 bg-gradient-to-r from-success to-primary text-white shadow-lg" data-testid="badge-content">
