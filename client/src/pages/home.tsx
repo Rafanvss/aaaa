@@ -339,7 +339,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" data-testid="heading-benefits">
             A Transformação do Seu Cão
           </h2>
-          <p className="text-center text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             Veja como a alimentação natural pode mudar completamente a vida do seu melhor amigo
           </p>
           
