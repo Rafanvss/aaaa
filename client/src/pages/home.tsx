@@ -453,7 +453,7 @@ export default function Home() {
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-foreground font-bold text-base md:text-lg">
-                      Guia de Alimentação Saudável para Cães <span className="text-success">COMPLETO</span> e Passo a Passo de como usar.
+                      Guia de Alimentação Natural para Cães
                     </p>
                   </div>
                 </div>
