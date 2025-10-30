@@ -26,6 +26,7 @@ import {
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
 import { useState, useEffect } from "react";
+import { format } from "date-fns";
 
 const nomes = [
   "Maria Silva",
@@ -90,6 +91,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Discount Banner */}
+      <div className="w-full bg-gradient-to-r from-primary to-success py-3 text-center" data-testid="discount-banner">
+        <p className="text-white font-bold text-sm md:text-base">
+          Desconto só HOJE nessa página - ({format(new Date(), 'dd/MM/yyyy')})
+        </p>
+      </div>
+      
       {/* Purchase Notifications */}
       <div className="fixed bottom-4 left-4 z-50 space-y-2" data-testid="notifications-container">
         {notifications.map((notification) => (
