@@ -127,23 +127,6 @@ export default function Home() {
               </Card>
             ))}
           </div>
-
-          {/* Bonus Section */}
-          <Card className="border-4 border-success/50 bg-gradient-to-br from-success/10 via-primary/10 to-background shadow-2xl" data-testid="card-bonus">
-            <CardContent className="p-8 text-center space-y-4">
-              <div className="flex justify-center">
-                <Badge className="text-xl px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white shadow-lg animate-pulse" data-testid="badge-bonus">
-                  🎁 BÔNUS EXCLUSIVOS
-                </Badge>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-                +3 Materiais Extras de Presente!
-              </h3>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Ganhe acesso imediato a conteúdos complementares que vão potencializar os resultados do seu cão
-              </p>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
