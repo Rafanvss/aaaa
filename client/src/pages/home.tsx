@@ -42,11 +42,8 @@ export default function Home() {
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground"
                 data-testid="heading-hero"
               >
-                Mesmo escolhendo a ração certa, ele continua <span className="text-destructive">sem energia</span>, <span className="text-destructive">ganhando peso</span>, com <span className="text-destructive">problemas digestivos</span> ou <span className="text-destructive">problemas de pele</span>?
+                Mesmo escolhendo a ração certa, ele continua <span className="text-primary">sem energia</span>, <span className="text-primary">ganhando peso</span>, com <span className="text-primary">problemas digestivos</span> ou <span className="text-primary">problemas de pele</span>? <span className="text-success">Tem jeito, e é mais simples do que você imagina!</span>
               </h1>
-              <p className="text-2xl md:text-3xl font-bold text-success">
-                Tem jeito, e é mais simples do que você imagina!
-              </p>
               <p className="text-lg md:text-xl text-muted-foreground">
                 Aprenda <span className="text-success font-semibold">passo a passo</span> como montar o <span className="text-success font-semibold">cardápio ideal</span>, evitar erros e garantir <span className="text-success font-semibold">mais anos de vida</span> ao seu melhor amigo.
               </p>
