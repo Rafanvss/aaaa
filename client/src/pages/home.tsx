@@ -291,6 +291,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Arrow indicator */}
+      <div className="flex justify-center py-8 bg-gradient-to-br from-success/5 to-background">
+        <ArrowDown className="w-12 h-12 text-primary" data-testid="icon-arrow-down-learn" />
+      </div>
+
       {/* What You'll Learn Section */}
       <section className="pb-20 md:pb-24 bg-background relative overflow-hidden">
         <div className="pt-2 bg-background"></div>
