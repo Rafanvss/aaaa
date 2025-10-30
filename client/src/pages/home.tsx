@@ -64,30 +64,30 @@ export default function Home() {
               >
                 Quero o Guia Agora
               </Button>
+            </div>
+          </div>
+        </div>
 
-              {/* Animated Banner Ribbons */}
-              <div className="relative h-24 -mx-4 overflow-hidden" data-testid="animated-banners">
-                <div className="absolute top-2 left-0 right-0 h-10 bg-gradient-to-r from-primary to-primary/90 transform -rotate-3 shadow-lg overflow-hidden">
-                  <div className="animated-banner flex items-center h-full whitespace-nowrap">
-                    <span className="inline-block px-8 text-white font-bold text-sm md:text-base">
-                      ✨ ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
-                    </span>
-                    <span className="inline-block px-8 text-white font-bold text-sm md:text-base">
-                      ✨ ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
-                    </span>
-                  </div>
-                </div>
-                <div className="absolute top-14 left-0 right-0 h-10 bg-gradient-to-r from-success to-success/90 transform rotate-3 shadow-lg overflow-hidden">
-                  <div className="animated-banner flex items-center h-full whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
-                    <span className="inline-block px-8 text-white font-bold text-sm md:text-base">
-                      🐕 SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • 
-                    </span>
-                    <span className="inline-block px-8 text-white font-bold text-sm md:text-base">
-                      🐕 SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • 
-                    </span>
-                  </div>
-                </div>
-              </div>
+        {/* Animated Banner Ribbons */}
+        <div className="relative w-full h-32 mt-12 overflow-hidden" data-testid="animated-banners">
+          <div className="absolute top-4 left-0 right-0 h-12 bg-gradient-to-r from-primary via-primary to-primary/90 transform -rotate-2 shadow-2xl overflow-hidden">
+            <div className="animated-banner flex items-center h-full whitespace-nowrap">
+              <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
+                ✨ ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
+              </span>
+              <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
+                ✨ ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
+              </span>
+            </div>
+          </div>
+          <div className="absolute top-20 left-0 right-0 h-12 bg-gradient-to-r from-success via-success to-success/90 transform rotate-2 shadow-2xl overflow-hidden">
+            <div className="animated-banner flex items-center h-full whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
+              <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
+                🐕 SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • 
+              </span>
+              <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
+                🐕 SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • 
+              </span>
             </div>
           </div>
         </div>
