@@ -179,17 +179,22 @@ export default function Home() {
             O Guia é para você que:
           </h2>
           <div className="space-y-6">
-            {[
-              "Quer oferecer uma alimentação mais natural e equilibrada para seu cão, mas não sabe por onde começar.",
-              "Se preocupa de verdade com a saúde, o bem-estar e a longevidade do seu pet.",
-              "Quer entender o que realmente faz bem — e o que deve ser evitado de vez.",
-              "Acredita que amor também se demonstra no cuidado diário com o que seu cão come."
-            ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4" data-testid={`item-for-who-${index}`}>
-                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground">{item}</p>
-              </div>
-            ))}
+            <div className="flex items-start gap-4" data-testid="item-for-who-0">
+              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+              <p className="text-lg font-bold text-foreground">Quer oferecer uma <span className="text-success">alimentação mais natural</span> e equilibrada para seu cão, mas não sabe por onde começar.</p>
+            </div>
+            <div className="flex items-start gap-4" data-testid="item-for-who-1">
+              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+              <p className="text-lg font-bold text-foreground">Se preocupa de verdade com a <span className="text-success">saúde, o bem-estar e a longevidade</span> do seu pet.</p>
+            </div>
+            <div className="flex items-start gap-4" data-testid="item-for-who-2">
+              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+              <p className="text-lg font-bold text-foreground">Quer entender o que <span className="text-success">realmente faz bem</span> — e o que deve ser evitado de vez.</p>
+            </div>
+            <div className="flex items-start gap-4" data-testid="item-for-who-3">
+              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+              <p className="text-lg font-bold text-foreground">Acredita que <span className="text-success">amor também se demonstra</span> no cuidado diário com o que seu cão come.</p>
+            </div>
           </div>
         </div>
       </section>
