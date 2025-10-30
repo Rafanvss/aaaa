@@ -94,7 +94,7 @@ export default function Home() {
       {/* Discount Banner */}
       <div className="w-full bg-red-600 py-3 text-center" data-testid="discount-banner">
         <p className="text-white font-bold text-sm md:text-base">
-          Desconto só <span className="text-yellow-400">HOJE</span> nessa página - (<span className="text-yellow-400">{format(new Date(), 'dd/MM/yyyy')}</span>)
+          Desconto só <span className="text-yellow-400">HOJE</span> nessa página - <span className="text-yellow-400">{format(new Date(), 'dd/MM/yyyy')}</span>
         </p>
       </div>
       
