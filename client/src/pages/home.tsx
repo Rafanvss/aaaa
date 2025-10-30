@@ -70,7 +70,7 @@ export default function Home() {
 
         {/* Animated Banner Ribbons */}
         <div className="relative w-full h-40 mt-12 overflow-hidden" data-testid="animated-banners">
-          <div className="absolute top-6 left-0 right-0 h-12 bg-gradient-to-r from-primary via-primary to-primary/90 transform -rotate-2 shadow-2xl overflow-hidden">
+          <div className="absolute top-6 left-0 right-0 h-12 bg-gradient-to-r from-primary via-primary to-primary/90 transform -rotate-2 overflow-hidden">
             <div className="animated-banner flex items-center h-full whitespace-nowrap">
               <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
                 ✨ ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • ALIMENTAÇÃO NATURAL • GUIA COMPLETO + BÔNUS • RESULTADOS EM 30 DIAS • GARANTIA DE 7 DIAS • ACESSO IMEDIATO • TRANSFORME A SAÚDE DO SEU CÃO • 
@@ -80,7 +80,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="absolute top-24 left-0 right-0 h-12 bg-gradient-to-r from-success via-success to-success/90 transform rotate-2 shadow-2xl overflow-hidden">
+          <div className="absolute top-24 left-0 right-0 h-12 bg-gradient-to-r from-success via-success to-success/90 transform rotate-2 overflow-hidden">
             <div className="animated-banner flex items-center h-full whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
               <span className="inline-block px-10 text-white font-bold text-base md:text-lg tracking-wide">
                 🐕 SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • SAÚDE E VITALIDADE • RECEITAS PRÁTICAS • SEM MISTÉRIO • APROVADO POR VETERINÁRIOS • COMEÇE HOJE MESMO • CÃES MAIS FELIZES • 
