@@ -71,47 +71,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section className="py-20 md:py-24 bg-background">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <div className="text-center mb-12">
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Um passo a passo simples e prático para entender o que realmente faz bem ao seu cão.
-              Descubra os alimentos certos, monte cardápios equilibrados e aprenda receitas caseiras que melhoram a saúde do seu pet.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-            <Card className="text-center hover-elevate transition-all">
-              <CardContent className="pt-8 pb-8 space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-success/20 to-primary/20 rounded-full flex items-center justify-center mx-auto">
-                  <BookOpen className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold" data-testid="text-step-1">Aprenda</h3>
-                <p className="text-muted-foreground">Conheça os fundamentos da alimentação natural</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover-elevate transition-all">
-              <CardContent className="pt-8 pb-8 space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-success/20 to-primary/20 rounded-full flex items-center justify-center mx-auto">
-                  <TrendingUp className="w-8 h-8 text-success" />
-                </div>
-                <h3 className="text-xl font-semibold" data-testid="text-step-2">Aplique</h3>
-                <p className="text-muted-foreground">Monte cardápios e prepare receitas saudáveis</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover-elevate transition-all">
-              <CardContent className="pt-8 pb-8 space-y-4">
-                <div className="w-16 h-16 bg-gradient-to-br from-success/20 to-primary/20 rounded-full flex items-center justify-center mx-auto">
-                  <Award className="w-8 h-8 text-success" />
-                </div>
-                <h3 className="text-xl font-semibold" data-testid="text-step-3">Veja Resultados</h3>
-                <p className="text-muted-foreground">Observe a transformação na saúde do seu pet</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* What You'll Learn Section */}
       <section className="py-20 md:py-24 bg-gradient-to-br from-primary/10 via-success/10 to-background relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
