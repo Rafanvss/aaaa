@@ -113,30 +113,56 @@ export default function Home() {
       </section>
 
       {/* What You'll Learn Section */}
-      <section className="py-20 md:py-24 bg-gradient-to-br from-background to-muted/30">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-testid="heading-what-learn">
-            O que você vai aprender com o guia:
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              "Introdução à Alimentação Natural",
-              "Alimentos Permitidos e Proibidos",
-              "Receitas Caseiras e Saudáveis",
-              "Como Montar o Cardápio do Seu Pet",
-              "Hidratação e Cuidados Extras",
-              "Suplementos Naturais e Vitaminas",
-            ].map((item, index) => (
-              <div key={index} className="flex items-center gap-4" data-testid={`item-learn-${index}`}>
-                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0" />
-                <span className="text-lg text-foreground">{item}</span>
-              </div>
-            ))}
-            <div className="flex items-center gap-4 md:col-span-2 justify-center">
-              <Sparkles className="w-6 h-6 text-success flex-shrink-0" />
-              <span className="text-lg font-semibold text-foreground">+3 Bônus exclusivos</span>
-            </div>
+      <section className="py-20 md:py-24 bg-gradient-to-br from-primary/10 via-success/10 to-background relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
+          <div className="text-center mb-12 space-y-4">
+            <Badge className="text-lg px-6 py-2 bg-gradient-to-r from-success to-primary text-white shadow-lg" data-testid="badge-content">
+              CONTEÚDO COMPLETO
+            </Badge>
+            <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent" data-testid="heading-what-learn">
+              O Que Você Vai Aprender
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Tudo que você precisa para transformar a alimentação do seu cão
+            </p>
           </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {[
+              { title: "Introdução à Alimentação Natural", icon: BookOpen },
+              { title: "Alimentos Permitidos e Proibidos", icon: Shield },
+              { title: "Receitas Caseiras e Saudáveis", icon: Apple },
+              { title: "Como Montar o Cardápio do Seu Pet", icon: Heart },
+              { title: "Hidratação e Cuidados Extras", icon: Activity },
+              { title: "Suplementos Naturais e Vitaminas", icon: Sparkles },
+            ].map((item, index) => (
+              <Card key={index} className="hover-elevate transition-all border-2" data-testid={`item-learn-${index}`}>
+                <CardContent className="p-6 space-y-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center">
+                    <item.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Bonus Section */}
+          <Card className="border-4 border-success/50 bg-gradient-to-br from-success/10 via-primary/10 to-background shadow-2xl" data-testid="card-bonus">
+            <CardContent className="p-8 text-center space-y-4">
+              <div className="flex justify-center">
+                <Badge className="text-xl px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white shadow-lg animate-pulse" data-testid="badge-bonus">
+                  🎁 BÔNUS EXCLUSIVOS
+                </Badge>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                +3 Materiais Extras de Presente!
+              </h3>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Ganhe acesso imediato a conteúdos complementares que vão potencializar os resultados do seu cão
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
