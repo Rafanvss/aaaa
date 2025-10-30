@@ -434,26 +434,70 @@ export default function Home() {
         id="offer-section"
         className="py-20 md:py-24 bg-gradient-to-br from-primary/10 via-success/5 to-background"
       >
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <Card className="shadow-xl border-2" data-testid="card-offer">
-            <CardContent className="p-8 md:p-12 space-y-8">
-              <div className="text-center space-y-4">
-                <Badge className="text-lg px-4 py-2 bg-gradient-to-r from-success to-primary text-white" data-testid="badge-special-offer">
-                  Oferta Especial — Somente Hoje
-                </Badge>
-                <div className="space-y-2">
-                  <div className="text-2xl text-muted-foreground line-through" data-testid="text-price-old">
-                    R$ 97,00
-                  </div>
-                  <div className="text-5xl md:text-6xl font-bold text-foreground" data-testid="text-price-new">
-                    R$ 14,90
-                  </div>
+        <div className="container mx-auto px-4 md:px-6 max-w-2xl">
+          <Card className="shadow-xl border-4 border-success rounded-3xl bg-card/50" data-testid="card-offer">
+            <CardContent className="p-8 md:p-10 space-y-6">
+              {/* Header Titles */}
+              <div className="text-center space-y-2">
+                <div className="bg-success text-white font-bold text-xl md:text-2xl px-6 py-3 rounded-full inline-block" data-testid="badge-title-1">
+                  TUDO QUE VOCÊ
                 </div>
-                <p className="text-lg text-muted-foreground">
-                  Acesso imediato ao guia completo e conteúdo passo a passo.
-                </p>
+                <div className="bg-success text-white font-bold text-xl md:text-2xl px-6 py-3 rounded-full inline-block" data-testid="badge-title-2">
+                  VAI RECEBER HOJE:
+                </div>
               </div>
 
+              {/* Benefits List */}
+              <div className="space-y-4 py-4">
+                <div className="flex items-start gap-3" data-testid="item-benefit-0">
+                  <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-foreground font-bold text-base md:text-lg">
+                      Guia de Alimentação Saudável para Cães <span className="text-success">COMPLETO</span> e Passo a Passo de como usar.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3" data-testid="item-benefit-1">
+                  <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-success font-bold text-base md:text-lg">
+                      Receitas de Caseiras e Saudáveis
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3" data-testid="item-benefit-2">
+                  <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-success font-bold text-base md:text-lg">
+                      Suporte Exclusivo
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3" data-testid="item-benefit-3">
+                  <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-success font-bold text-base md:text-lg">
+                      Pagamento Único
+                    </p>
+                    <p className="text-muted-foreground text-sm">sem mensalidades</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Price */}
+              <div className="text-center space-y-2 py-4">
+                <div className="text-xl font-bold text-foreground" data-testid="text-total-value">
+                  Valor Total: <span className="line-through">R$ 87</span>
+                </div>
+                <div className="text-2xl font-bold text-foreground" data-testid="text-only-for">
+                  Por Apenas:
+                </div>
+                <div className="text-6xl md:text-7xl font-bold text-success" data-testid="text-price-new">
+                  R$ 14<sup className="text-4xl">,90</sup>
+                </div>
+              </div>
+
+              {/* CTA Button */}
               <Button
                 size="lg"
                 className="w-full text-xl py-7 bg-gradient-to-r from-success to-primary shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
