@@ -92,9 +92,9 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Discount Banner */}
-      <div className="w-full bg-gradient-to-r from-primary to-success py-3 text-center" data-testid="discount-banner">
+      <div className="w-full bg-red-600 py-3 text-center" data-testid="discount-banner">
         <p className="text-white font-bold text-sm md:text-base">
-          Desconto só HOJE nessa página - ({format(new Date(), 'dd/MM/yyyy')})
+          Desconto só <span className="text-yellow-400">HOJE</span> nessa página - (<span className="text-yellow-400">{format(new Date(), 'dd/MM/yyyy')}</span>)
         </p>
       </div>
       
