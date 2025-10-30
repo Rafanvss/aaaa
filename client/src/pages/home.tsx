@@ -167,11 +167,11 @@ export default function Home() {
                   </Badge>
                 </div>
 
-                <div className="w-full aspect-video rounded-lg overflow-hidden">
+                <div className="w-full">
                   <img 
                     src="https://cakto-quiz-br01.b-cdn.net/uploads/d36cec69-ae36-454f-8c52-005f9b99f346.jpg"
                     alt="Cachorro com ração industrial"
-                    className="w-full h-full object-cover"
+                    className="w-full rounded-md"
                     data-testid="image-industrial-food"
                   />
                 </div>
@@ -203,11 +203,11 @@ export default function Home() {
                   </Badge>
                 </div>
 
-                <div className="w-full aspect-video rounded-lg overflow-hidden">
+                <div className="w-full">
                   <img 
                     src="https://cakto-quiz-br01.b-cdn.net/uploads/f453bbdf-64c6-47a8-82e2-4ff771fe13e6.jpg"
                     alt="Cachorro com alimentação natural"
-                    className="w-full h-full object-cover"
+                    className="w-full rounded-md"
                     data-testid="image-natural-food"
                   />
                 </div>
