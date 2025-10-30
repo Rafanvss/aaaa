@@ -356,4 +356,22 @@
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
   }
+
+  /* Animated Banner Ribbons */
+  @keyframes scroll-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animated-banner {
+    animation: scroll-banner 30s linear infinite;
+  }
+
+  .animated-banner:hover {
+    animation-play-state: paused;
+  }
 }
