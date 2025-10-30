@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -23,63 +22,6 @@ import {
   Star,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl_cc08fd45.png";
-
-function CountdownTimer() {
-  const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
-
-  useEffect(() => {
-    const calculateTimeLeft = () => {
-      const now = new Date();
-      const target = new Date();
-      target.setHours(23, 0, 0, 0);
-      
-      if (now > target) {
-        target.setDate(target.getDate() + 1);
-      }
-      
-      const difference = target.getTime() - now.getTime();
-      
-      return {
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    };
-
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    setTimeLeft(calculateTimeLeft());
-
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="flex gap-3 justify-center items-center">
-      <div className="flex flex-col items-center">
-        <div className="bg-foreground text-background rounded-lg px-4 py-3 min-w-[70px] text-center">
-          <div className="text-3xl font-bold">{String(timeLeft.hours).padStart(2, '0')}</div>
-        </div>
-        <div className="text-sm text-muted-foreground mt-1">Horas</div>
-      </div>
-      <div className="text-3xl font-bold text-foreground">:</div>
-      <div className="flex flex-col items-center">
-        <div className="bg-foreground text-background rounded-lg px-4 py-3 min-w-[70px] text-center">
-          <div className="text-3xl font-bold">{String(timeLeft.minutes).padStart(2, '0')}</div>
-        </div>
-        <div className="text-sm text-muted-foreground mt-1">Minutos</div>
-      </div>
-      <div className="text-3xl font-bold text-foreground">:</div>
-      <div className="flex flex-col items-center">
-        <div className="bg-foreground text-background rounded-lg px-4 py-3 min-w-[70px] text-center">
-          <div className="text-3xl font-bold">{String(timeLeft.seconds).padStart(2, '0')}</div>
-        </div>
-        <div className="text-sm text-muted-foreground mt-1">Segundos</div>
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   const scrollToOffer = () => {
@@ -236,7 +178,7 @@ export default function Home() {
                 </Badge>
                 <div className="space-y-2">
                   <div className="text-2xl text-muted-foreground line-through" data-testid="text-price-old">
-                    R$ 49,90
+                    R$ 97,00
                   </div>
                   <div className="text-5xl md:text-6xl font-bold text-foreground" data-testid="text-price-new">
                     R$ 14,90
@@ -245,15 +187,6 @@ export default function Home() {
                 <p className="text-lg text-muted-foreground">
                   Acesso imediato ao guia completo e conteúdo passo a passo.
                 </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-center text-sm font-semibold text-muted-foreground" data-testid="text-countdown-label">
-                  ESTA OFERTA TERMINA EM:
-                </p>
-                <div data-testid="countdown-timer">
-                  <CountdownTimer />
-                </div>
               </div>
 
               <Button
