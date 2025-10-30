@@ -93,19 +93,17 @@ function ResultsCarousel() {
   }, [emblaApi]);
 
   return (
-    <div className="relative group">
+    <div className="relative group max-w-3xl mx-auto">
       <div className="overflow-hidden" ref={emblaRef} data-testid="carousel-results">
         <div className="flex gap-4">
           {resultsImages.map((image, index) => (
-            <div key={index} className="flex-[0_0_100%] md:flex-[0_0_80%] min-w-0" data-testid={`carousel-slide-${index}`}>
-              <div className="mx-auto max-w-3xl">
-                <img 
-                  src={image.src} 
-                  alt={image.alt}
-                  className="w-full rounded-lg shadow-xl"
-                  data-testid={`image-result-${index}`}
-                />
-              </div>
+            <div key={index} className="flex-[0_0_100%] min-w-0" data-testid={`carousel-slide-${index}`}>
+              <img 
+                src={image.src} 
+                alt={image.alt}
+                className="w-full rounded-lg shadow-xl"
+                data-testid={`image-result-${index}`}
+              />
             </div>
           ))}
         </div>
@@ -114,7 +112,7 @@ function ResultsCarousel() {
       <Button
         size="icon"
         variant="outline"
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
         onClick={scrollPrev}
         data-testid="button-carousel-prev"
       >
@@ -124,7 +122,7 @@ function ResultsCarousel() {
       <Button
         size="icon"
         variant="outline"
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
         onClick={scrollNext}
         data-testid="button-carousel-next"
       >
