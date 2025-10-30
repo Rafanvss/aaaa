@@ -114,7 +114,7 @@ export default function Home() {
         ))}
       </div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-success/5 to-background py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-success/5 to-background pt-8 pb-20 md:pt-12 md:pb-32">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
