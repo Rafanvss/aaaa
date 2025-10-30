@@ -452,7 +452,7 @@ export default function Home() {
                 <div className="flex items-start gap-3" data-testid="item-benefit-0">
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-success font-bold text-base md:text-lg">
+                    <p className="text-foreground font-bold text-base md:text-lg">
                       Guia de Alimentação Natural para Cães
                     </p>
                   </div>
@@ -460,7 +460,7 @@ export default function Home() {
                 <div className="flex items-start gap-3" data-testid="item-benefit-1">
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-success font-bold text-base md:text-lg">
+                    <p className="text-foreground font-bold text-base md:text-lg">
                       Receitas de Caseiras e Saudáveis
                     </p>
                   </div>
@@ -468,7 +468,7 @@ export default function Home() {
                 <div className="flex items-start gap-3" data-testid="item-benefit-2">
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-success font-bold text-base md:text-lg">
+                    <p className="text-foreground font-bold text-base md:text-lg">
                       Suporte Exclusivo
                     </p>
                   </div>
@@ -476,7 +476,7 @@ export default function Home() {
                 <div className="flex items-start gap-3" data-testid="item-benefit-3">
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-success font-bold text-base md:text-lg">
+                    <p className="text-foreground font-bold text-base md:text-lg">
                       Pagamento Único
                     </p>
                     <p className="text-muted-foreground text-sm">sem mensalidades</p>
