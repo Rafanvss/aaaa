@@ -138,7 +138,7 @@ export default function Home() {
               <CardContent className="p-8 space-y-6">
                 <div className="text-center space-y-2">
                   <Badge variant="destructive" className="text-base px-4 py-2" data-testid="badge-before">
-                    ANTES
+                    Com Ração Industrial
                   </Badge>
                   <h3 className="text-2xl font-bold">Como Está Agora</h3>
                 </div>
@@ -166,7 +166,7 @@ export default function Home() {
               <CardContent className="p-8 space-y-6">
                 <div className="text-center space-y-2">
                   <Badge className="text-base px-4 py-2 bg-gradient-to-r from-success to-primary text-white" data-testid="badge-after">
-                    DEPOIS
+                    Com Alimentação Natural
                   </Badge>
                   <h3 className="text-2xl font-bold">Com o Guia</h3>
                 </div>
