@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         {/* Arrow indicator */}
-        <div className="flex justify-center py-4 bg-background">
+        <div className="flex justify-center pt-16 pb-4 bg-background">
           <ArrowDown className="w-12 h-12 text-primary animate-bounce" data-testid="icon-arrow-down-content" />
         </div>
       </section>
