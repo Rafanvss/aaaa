@@ -278,7 +278,7 @@ export default function Home() {
 
       {/* Arrow indicator */}
       <div className="flex justify-center py-8 bg-background">
-        <ArrowDown className="w-12 h-12 text-success" data-testid="icon-arrow-down-transformations" />
+        <ArrowDown className="w-12 h-12 text-primary" data-testid="icon-arrow-down-transformations" />
       </div>
 
       {/* Results Carousel Section */}
