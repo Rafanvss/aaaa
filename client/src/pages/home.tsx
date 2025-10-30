@@ -297,9 +297,9 @@ export default function Home() {
       </div>
 
       {/* What You'll Learn Section */}
-      <section className="pb-20 md:pb-24 bg-background relative overflow-hidden">
+      <section className="pb-8 bg-background relative overflow-hidden">
         <div className="pt-2 bg-background"></div>
-        <div className="bg-gradient-to-br from-primary/10 via-success/10 to-background pt-2">
+        <div className="bg-gradient-to-br from-primary/10 via-success/10 to-background pt-2 pb-8">
           <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
           <div className="text-center mb-6 space-y-4 py-8">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground" data-testid="heading-what-learn">
@@ -310,7 +310,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Introdução à Alimentação Natural", icon: BookOpen },
               { title: "Alimentos Permitidos e Proibidos", icon: Shield },
