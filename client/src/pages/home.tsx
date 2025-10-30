@@ -114,7 +114,7 @@ function ResultsCarousel() {
       <Button
         size="icon"
         variant="outline"
-        className="absolute -left-5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
         onClick={scrollPrev}
         data-testid="button-carousel-prev"
       >
@@ -124,7 +124,7 @@ function ResultsCarousel() {
       <Button
         size="icon"
         variant="outline"
-        className="absolute -right-5 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white border-0 h-16 w-10 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity z-10"
         onClick={scrollNext}
         data-testid="button-carousel-next"
       >
