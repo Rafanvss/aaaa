@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* What You'll Learn Section */}
-      <section className="py-20 md:py-24 bg-gradient-to-br from-primary/10 via-success/10 to-background relative overflow-hidden">
+      <section className="pb-20 md:pb-24 bg-gradient-to-br from-primary/10 via-success/10 to-background relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
           <div className="text-center mb-12 space-y-4">
             <Badge className="text-lg px-6 py-2 bg-gradient-to-r from-success to-primary text-white shadow-lg" data-testid="badge-content">
