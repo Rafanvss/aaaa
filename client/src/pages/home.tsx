@@ -498,28 +498,11 @@ export default function Home() {
                 Quero Começar Hoje!
               </Button>
 
-              <div className="flex items-center justify-center gap-2 text-muted-foreground" data-testid="secure-purchase">
-                <Shield className="w-5 h-5 text-success" />
-                <span className="text-sm font-medium">Compra 100% Segura</span>
+              <div className="text-center text-muted-foreground" data-testid="secure-purchase">
+                <p className="text-sm font-medium">Compra protegida | Acesso imediato | Garantia de 7 dias</p>
               </div>
             </CardContent>
           </Card>
-        </div>
-      </section>
-
-      {/* Guarantee Section */}
-      <section className="py-16 md:py-20 bg-success/10">
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-            <Shield className="w-16 h-16 text-success flex-shrink-0" data-testid="icon-guarantee-shield" />
-            <div className="space-y-2">
-              <h3 className="text-2xl font-bold" data-testid="heading-guarantee">Compra 100% Segura</h3>
-              <p className="text-lg text-muted-foreground" data-testid="text-guarantee">
-                Compra protegida | Acesso imediato | Garantia de 7 dias
-              </p>
-            </div>
-            <CheckCircle2 className="w-16 h-16 text-success flex-shrink-0" data-testid="icon-guarantee-check" />
-          </div>
         </div>
       </section>
 
