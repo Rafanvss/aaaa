@@ -29,6 +29,7 @@ import beforeAfter1 from "@assets/Copilot_20251030_175945_1761859629119.png";
 import beforeAfter2 from "@assets/Copilot_20251030_181115_1761859631709.png";
 import beforeAfter3 from "@assets/Copilot_20251030_181921_1761859634222.png";
 import worriedOwnerImage from "@assets/image_1761942933023.png";
+import guaranteeBadge from "@assets/image_1761947776929.png";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import useEmblaCarousel from "embla-carousel-react";
@@ -503,6 +504,30 @@ export default function Home() {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Guarantee Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-br from-success/5 to-background">
+        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <img 
+                src={guaranteeBadge} 
+                alt="Garantia de 7 dias"
+                className="w-48 h-48 md:w-64 md:h-64"
+                data-testid="image-guarantee-badge"
+              />
+            </div>
+            <div className="space-y-4 text-center md:text-left">
+              <h3 className="text-2xl md:text-3xl font-bold text-foreground" data-testid="heading-guarantee">
+                Garantia de 7 Dias
+              </h3>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed" data-testid="text-guarantee-description">
+                Nos termos do Código de Defesa do Consumidor (Lei nº 8.078/90), garantimos o direito de arrependimento no prazo de até 7 dias corridos após a compra. Caso precise, basta entrar em contato conosco dentro desse período e realizaremos o estorno conforme a legislação.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
