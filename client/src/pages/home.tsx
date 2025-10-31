@@ -455,7 +455,7 @@ export default function Home() {
                   <CheckCircle2 className="w-7 h-7 text-success flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-foreground font-bold text-base md:text-lg">
-                      Receitas de Caseiras e Saudáveis
+                      Receitas Caseiras e Saudáveis
                     </p>
                   </div>
                 </div>
