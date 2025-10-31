@@ -30,10 +30,11 @@ import beforeAfter2 from "@assets/Copilot_20251030_181115_1761859631709.png";
 import beforeAfter3 from "@assets/Copilot_20251030_181921_1761859634222.png";
 import worriedOwnerImage from "@assets/image_1761942933023.png";
 import guaranteeBadge from "@assets/image_1761947776929.png";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { format } from "date-fns";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 
 const nomes = [
   "Maria Silva",
@@ -71,6 +72,22 @@ const resultsImages = [
   { src: beforeAfter2, alt: "Transformação cachorro 2" },
   { src: beforeAfter3, alt: "Transformação cachorro 3" },
 ];
+
+function AnimatedSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.6, delay }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 function ResultsCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
@@ -254,34 +271,46 @@ export default function Home() {
       {/* For Who Section */}
       <section className="py-8 md:py-12 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-for-who">
-            <span className="text-success underline">O Guia</span> é para você que:
-          </h2>
-          <div className="mb-8">
-            <img 
-              src={worriedOwnerImage} 
-              alt="Dono preocupado com cachorro e ração"
-              className="w-full rounded-lg shadow-lg"
-              data-testid="image-worried-owner"
-            />
-          </div>
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground" data-testid="heading-for-who">
+              <span className="text-success underline">O Guia</span> é para você que:
+            </h2>
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            <div className="mb-8">
+              <img 
+                src={worriedOwnerImage} 
+                alt="Dono preocupado com cachorro e ração"
+                className="w-full rounded-lg shadow-lg"
+                data-testid="image-worried-owner"
+              />
+            </div>
+          </AnimatedSection>
           <div className="space-y-6">
-            <div className="flex items-start gap-4" data-testid="item-for-who-0">
-              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
-              <p className="text-lg font-bold text-foreground">Quer oferecer uma <span className="text-success">alimentação mais natural</span> e equilibrada para seu cão, mas não sabe por onde começar.</p>
-            </div>
-            <div className="flex items-start gap-4" data-testid="item-for-who-1">
-              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
-              <p className="text-lg font-bold text-foreground">Se preocupa de verdade com a <span className="text-success">saúde, o bem-estar e a longevidade</span> do seu pet.</p>
-            </div>
-            <div className="flex items-start gap-4" data-testid="item-for-who-2">
-              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
-              <p className="text-lg font-bold text-foreground">Quer entender o que <span className="text-success">realmente faz bem</span> — e o que deve ser evitado de vez.</p>
-            </div>
-            <div className="flex items-start gap-4" data-testid="item-for-who-3">
-              <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
-              <p className="text-lg font-bold text-foreground">Acredita que <span className="text-success">amor também se demonstra</span> no cuidado diário com o que seu cão come.</p>
-            </div>
+            <AnimatedSection delay={0.2}>
+              <div className="flex items-start gap-4" data-testid="item-for-who-0">
+                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+                <p className="text-lg font-bold text-foreground">Quer oferecer uma <span className="text-success">alimentação mais natural</span> e equilibrada para seu cão, mas não sabe por onde começar.</p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.3}>
+              <div className="flex items-start gap-4" data-testid="item-for-who-1">
+                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+                <p className="text-lg font-bold text-foreground">Se preocupa de verdade com a <span className="text-success">saúde, o bem-estar e a longevidade</span> do seu pet.</p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.4}>
+              <div className="flex items-start gap-4" data-testid="item-for-who-2">
+                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+                <p className="text-lg font-bold text-foreground">Quer entender o que <span className="text-success">realmente faz bem</span> — e o que deve ser evitado de vez.</p>
+              </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.5}>
+              <div className="flex items-start gap-4" data-testid="item-for-who-3">
+                <CheckCircle2 className="w-6 h-6 text-success flex-shrink-0 mt-1" />
+                <p className="text-lg font-bold text-foreground">Acredita que <span className="text-success">amor também se demonstra</span> no cuidado diário com o que seu cão come.</p>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -296,14 +325,16 @@ export default function Home() {
         <div className="pt-2 bg-background"></div>
         <div className="bg-gradient-to-br from-primary/10 via-success/10 to-background pt-2 pb-8">
           <div className="container mx-auto px-4 md:px-6 max-w-6xl relative z-10">
-          <div className="text-center mb-6 space-y-4 py-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground" data-testid="heading-what-learn">
-              O Que Você vai <span className="text-success underline">Aprender</span> com o Guia
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tudo que você vai aprender no nosso guia de alimentação natural para cães
-            </p>
-          </div>
+          <AnimatedSection>
+            <div className="text-center mb-6 space-y-4 py-8">
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground" data-testid="heading-what-learn">
+                O Que Você vai <span className="text-success underline">Aprender</span> com o Guia
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Tudo que você vai aprender no nosso guia de alimentação natural para cães
+              </p>
+            </div>
+          </AnimatedSection>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -314,14 +345,16 @@ export default function Home() {
               { title: "Hidratação e Cuidados Extras", icon: Activity },
               { title: "Suplementos Naturais e Vitaminas", icon: Sparkles },
             ].map((item, index) => (
-              <Card key={index} className="hover-elevate transition-all border-2" data-testid={`item-learn-${index}`}>
-                <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
-                </CardContent>
-              </Card>
+              <AnimatedSection key={index} delay={index * 0.1}>
+                <Card className="hover-elevate transition-all border-2" data-testid={`item-learn-${index}`}>
+                  <CardContent className="p-6 flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-bold text-foreground">{item.title}</h3>
+                  </CardContent>
+                </Card>
+              </AnimatedSection>
             ))}
           </div>
         </div>
@@ -336,17 +369,20 @@ export default function Home() {
       {/* Before & After Section */}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" data-testid="heading-benefits">
-            A <span className="text-success underline">Transformação</span> do Seu Cão
-          </h2>
-          <p className="text-center text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Veja como a alimentação natural pode mudar completamente a vida do seu melhor amigo
-          </p>
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" data-testid="heading-benefits">
+              A <span className="text-success underline">Transformação</span> do Seu Cão
+            </h2>
+            <p className="text-center text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Veja como a alimentação natural pode mudar completamente a vida do seu melhor amigo
+            </p>
+          </AnimatedSection>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* ANTES */}
-            <Card className="border-2" data-testid="card-before">
-              <CardContent className="p-8 space-y-6">
+            <AnimatedSection delay={0.1}>
+              <Card className="border-2" data-testid="card-before">
+                <CardContent className="p-8 space-y-6">
                 <div className="text-center space-y-2">
                   <Badge variant="destructive" className="text-base px-4 py-2" data-testid="badge-before">
                     Com Ração Industrial
@@ -377,12 +413,14 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
 
             {/* DEPOIS */}
-            <Card className="border-2 border-success/50 bg-gradient-to-br from-success/5 to-background" data-testid="card-after">
-              <CardContent className="p-8 space-y-6">
+            <AnimatedSection delay={0.2}>
+              <Card className="border-2 border-success/50 bg-gradient-to-br from-success/5 to-background" data-testid="card-after">
+                <CardContent className="p-8 space-y-6">
                 <div className="text-center space-y-2">
                   <Badge className="text-base px-4 py-2 bg-gradient-to-r from-success to-primary text-white" data-testid="badge-after">
                     Com Alimentação Natural
@@ -413,8 +451,9 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
           </div>
 
           {/* Arrow indicator */}
@@ -430,8 +469,9 @@ export default function Home() {
         className="py-20 md:py-24 bg-gradient-to-br from-primary/10 via-success/5 to-background"
       >
         <div className="container mx-auto px-4 md:px-6 max-w-2xl">
-          <Card className="shadow-xl border-4 border-success rounded-3xl bg-card/50" data-testid="card-offer">
-            <CardContent className="p-8 md:p-10 space-y-6">
+          <AnimatedSection>
+            <Card className="shadow-xl border-4 border-success rounded-3xl bg-card/50" data-testid="card-offer">
+              <CardContent className="p-8 md:p-10 space-y-6">
               {/* Header Titles */}
               <div className="text-center space-y-2">
                 <div className="bg-success text-white font-bold text-xl md:text-2xl px-6 py-3 rounded-full inline-block" data-testid="badge-title-1">
@@ -502,41 +542,46 @@ export default function Home() {
               <div className="text-center text-muted-foreground" data-testid="secure-purchase">
                 <p className="text-sm font-medium">Compra protegida | Acesso imediato | Garantia de 7 dias</p>
               </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Guarantee Section */}
       <section className="py-16 md:py-20 bg-gradient-to-br from-success/5 to-background">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-shrink-0">
-              <img 
-                src={guaranteeBadge} 
-                alt="Garantia de 7 dias"
-                className="w-48 h-48 md:w-64 md:h-64"
-                data-testid="image-guarantee-badge"
-              />
+          <AnimatedSection>
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex-shrink-0">
+                <img 
+                  src={guaranteeBadge} 
+                  alt="Garantia de 7 dias"
+                  className="w-48 h-48 md:w-64 md:h-64"
+                  data-testid="image-guarantee-badge"
+                />
+              </div>
+              <div className="space-y-4 text-center md:text-left">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground" data-testid="heading-guarantee">
+                  Garantia de 7 Dias
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed" data-testid="text-guarantee-description">
+                  Nos termos do Código de Defesa do Consumidor (Lei nº 8.078/90), garantimos o direito de arrependimento no prazo de até 7 dias corridos após a compra. Caso precise, basta entrar em contato conosco dentro desse período e realizaremos o estorno conforme a legislação.
+                </p>
+              </div>
             </div>
-            <div className="space-y-4 text-center md:text-left">
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground" data-testid="heading-guarantee">
-                Garantia de 7 Dias
-              </h3>
-              <p className="text-base md:text-lg text-muted-foreground leading-relaxed" data-testid="text-guarantee-description">
-                Nos termos do Código de Defesa do Consumidor (Lei nº 8.078/90), garantimos o direito de arrependimento no prazo de até 7 dias corridos após a compra. Caso precise, basta entrar em contato conosco dentro desse período e realizaremos o estorno conforme a legislação.
-              </p>
-            </div>
-          </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* FAQ Section */}
       <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-testid="heading-faq">
-            Perguntas Frequentes
-          </h2>
+          <AnimatedSection>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-testid="heading-faq">
+              Perguntas Frequentes
+            </h2>
+          </AnimatedSection>
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border rounded-lg px-6" data-testid="accordion-faq-1">
               <AccordionTrigger className="text-left" data-testid="button-faq-1">
