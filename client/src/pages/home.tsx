@@ -28,7 +28,7 @@ import heroImage from "@assets/generated_images/happy_dog_with_natural_food_bowl
 import beforeAfter1 from "@assets/Copilot_20251030_175945_1761859629119.png";
 import beforeAfter2 from "@assets/Copilot_20251030_181115_1761859631709.png";
 import beforeAfter3 from "@assets/Copilot_20251030_181921_1761859634222.png";
-import sadDogImage from "@assets/image_1761868191885.png";
+import happyDogWithFood from "@assets/image_1761869074278.png";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
 import useEmblaCarousel from "embla-carousel-react";
@@ -258,10 +258,10 @@ export default function Home() {
           </h2>
           <div className="mb-8">
             <img 
-              src={sadDogImage} 
-              alt="Cachorro triste"
+              src={happyDogWithFood} 
+              alt="Cachorro feliz com comida natural"
               className="w-full rounded-lg shadow-lg"
-              data-testid="image-sad-dog"
+              data-testid="image-happy-dog-food"
             />
           </div>
           <div className="space-y-6">
