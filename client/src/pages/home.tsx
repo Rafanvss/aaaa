@@ -507,55 +507,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 md:py-24 bg-background">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-testid="heading-testimonials">
-            O que dizem os tutores
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Maria Silva",
-                text: "Meu cachorro finalmente come sem enjoar da comida!",
-                initials: "MS"
-              },
-              {
-                name: "João Santos",
-                text: "Em duas semanas já notei melhora na energia e no pelo!",
-                initials: "JS"
-              },
-              {
-                name: "Ana Costa",
-                text: "Guia fácil, direto e vale muito mais que o preço.",
-                initials: "AC"
-              },
-            ].map((testimonial, index) => (
-              <Card key={index} className="hover-elevate transition-all" data-testid={`card-testimonial-${index}`}>
-                <CardContent className="pt-6 pb-6 space-y-4">
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-success to-primary flex items-center justify-center text-white font-semibold" data-testid={`avatar-testimonial-${index}`}>
-                      {testimonial.initials}
-                    </div>
-                    <div>
-                      <div className="font-semibold" data-testid={`text-testimonial-name-${index}`}>
-                        {testimonial.name}
-                      </div>
-                      <div className="flex gap-1" data-testid={`stars-testimonial-${index}`}>
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="text-muted-foreground italic" data-testid={`text-testimonial-${index}`}>"{testimonial.text}"</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Guarantee Section */}
       <section className="py-16 md:py-20 bg-success/10">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
