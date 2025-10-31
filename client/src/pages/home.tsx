@@ -540,26 +540,82 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="item-2" className="border rounded-lg px-6" data-testid="accordion-faq-2">
               <AccordionTrigger className="text-left" data-testid="button-faq-2">
-                Serve para todas as raças?
+                Esse guia serve para qualquer raça de cachorro?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-2">
-                Sim! O guia foi desenvolvido para atender cães de todas as raças e portes, com orientações que podem ser adaptadas às necessidades específicas do seu pet.
+                Sim! O guia é pensado para cães de todas as raças e tamanhos, com dicas adaptáveis conforme o peso e idade do pet.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="border rounded-lg px-6" data-testid="accordion-faq-3">
               <AccordionTrigger className="text-left" data-testid="button-faq-3">
-                Tem receitas caseiras?
+                Meu cachorro não come legumes, funciona mesmo?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-3">
-                Sim! O guia inclui diversas receitas caseiras, saudáveis e fáceis de preparar, com ingredientes naturais e nutritivos para o seu pet.
+                Funciona! O guia ensina formas criativas de incluir vegetais, frutas e proteínas de um jeito que eles aceitam sem estresse.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4" className="border rounded-lg px-6" data-testid="accordion-faq-4">
               <AccordionTrigger className="text-left" data-testid="button-faq-4">
-                Posso acessar pelo celular?
+                Posso substituir totalmente a ração pela comida natural?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-4">
-                Claro! O guia está em formato PDF e pode ser acessado de qualquer dispositivo: celular, tablet ou computador.
+                Sim, mas é importante fazer a transição gradualmente para evitar problemas digestivos — o guia explica o passo a passo.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5" className="border rounded-lg px-6" data-testid="accordion-faq-5">
+              <AccordionTrigger className="text-left" data-testid="button-faq-5">
+                Preciso comprar suplementos caros?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-5">
+                Não! O guia foca em alimentos naturais ricos em nutrientes, mas explica quando e como os suplementos podem ajudar.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6" className="border rounded-lg px-6" data-testid="accordion-faq-6">
+              <AccordionTrigger className="text-left" data-testid="button-faq-6">
+                Quanto tempo até eu ver resultados?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-6">
+                Depende do pet, mas muitos tutores relatam melhora no apetite, energia e comportamento em poucos dias.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7" className="border rounded-lg px-6" data-testid="accordion-faq-7">
+              <AccordionTrigger className="text-left" data-testid="button-faq-7">
+                Meu cachorro tem mais de 10 anos, o guia ainda é indicado?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-7">
+                Sim! O guia tem dicas específicas para cães idosos, garantindo nutrição segura e digestão tranquila.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-8" className="border rounded-lg px-6" data-testid="accordion-faq-8">
+              <AccordionTrigger className="text-left" data-testid="button-faq-8">
+                É seguro para cães com alergias ou intolerâncias?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-8">
+                Sim, mas o guia também explica como identificar alimentos que podem causar reação e alternativas seguras.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-9" className="border rounded-lg px-6" data-testid="accordion-faq-9">
+              <AccordionTrigger className="text-left" data-testid="button-faq-9">
+                Preciso de acompanhamento veterinário?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-9">
+                Sempre é recomendado, mas o guia é feito para que você tenha orientação segura e prática no dia a dia.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-10" className="border rounded-lg px-6" data-testid="accordion-faq-10">
+              <AccordionTrigger className="text-left" data-testid="button-faq-10">
+                Posso aplicar o guia se meu cachorro come ração industrial todos os dias?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-10">
+                Sim! O guia ensina a transição gradual e segura, evitando estresse e rejeição à nova alimentação.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-11" className="border rounded-lg px-6" data-testid="accordion-faq-11">
+              <AccordionTrigger className="text-left" data-testid="button-faq-11">
+                Esse guia é só receitas?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground" data-testid="text-faq-answer-11">
+                Não! Ele é completo, com dicas de cardápio, rotinas, hidratação, suplementação natural e como a alimentação influencia no comportamento do cão.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
