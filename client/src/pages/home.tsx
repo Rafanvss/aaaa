@@ -30,6 +30,8 @@ import beforeAfter2 from "@assets/Copilot_20251030_181115_1761859631709.png";
 import beforeAfter3 from "@assets/Copilot_20251030_181921_1761859634222.png";
 import worriedOwnerImage from "@assets/image_1761942933023.png";
 import guaranteeBadge from "@assets/image_1761947776929.png";
+import industrialFoodImage from "@assets/image_1762029817092.png";
+import naturalFoodImage from "@assets/Lucid_Origin_A_realistic_scene_of_a_happy_dog_actively_eating__3 (1)_1762029833533.jpg";
 import { useState, useEffect, useRef } from "react";
 import { format } from "date-fns";
 import useEmblaCarousel from "embla-carousel-react";
@@ -391,7 +393,7 @@ export default function Home() {
 
                 <div className="w-full">
                   <img 
-                    src="https://cakto-quiz-br01.b-cdn.net/uploads/d36cec69-ae36-454f-8c52-005f9b99f346.jpg"
+                    src={industrialFoodImage}
                     alt="Cachorro com ração industrial"
                     className="w-full rounded-md"
                     data-testid="image-industrial-food"
@@ -429,7 +431,7 @@ export default function Home() {
 
                 <div className="w-full">
                   <img 
-                    src="https://cakto-quiz-br01.b-cdn.net/uploads/f453bbdf-64c6-47a8-82e2-4ff771fe13e6.jpg"
+                    src={naturalFoodImage}
                     alt="Cachorro com alimentação natural"
                     className="w-full rounded-md"
                     data-testid="image-natural-food"
