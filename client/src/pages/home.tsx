@@ -536,7 +536,7 @@ export default function Home() {
                 size="lg"
                 className="w-full text-xl py-7 bg-gradient-to-r from-success to-primary shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
                 data-testid="button-offer-cta"
-                onClick={() => window.location.href = 'https://comprasonlinedigital.top/c/5c8639cc22'}
+                onClick={() => window.location.href = 'https://compraseguradaonline.company/c/5c8639cc22'}
               >
                 Quero Começar Hoje!
               </Button>
