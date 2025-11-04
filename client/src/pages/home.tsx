@@ -158,7 +158,7 @@ function ResultsCarousel() {
 }
 
 export default function Home() {
-  const [notifications, setNotifications] = useState<Array<{ id: number; nome: string; cidade: string }>>([]);
+  const [notifications, setNotifications] = useState<Array<{ id: number; nome: string; cidade: string; isLeaving?: boolean }>>([]);
 
   useEffect(() => {
     const showNotification = () => {
@@ -166,18 +166,22 @@ export default function Home() {
       const cidade = cidades[Math.floor(Math.random() * cidades.length)];
       const id = Date.now();
 
-      setNotifications(prev => [...prev, { id, nome, cidade }]);
+      setNotifications(prev => [...prev, { id, nome, cidade, isLeaving: false }]);
 
       setTimeout(() => {
-        setNotifications(prev => prev.filter(n => n.id !== id));
-      }, 4000);
+        setNotifications(prev => prev.map(n => n.id === id ? { ...n, isLeaving: true } : n));
+        
+        setTimeout(() => {
+          setNotifications(prev => prev.filter(n => n.id !== id));
+        }, 500);
+      }, 5000);
     };
 
     const interval = setInterval(() => {
       showNotification();
-    }, 5000);
+    }, 15000);
 
-    setTimeout(() => showNotification(), 2000);
+    setTimeout(() => showNotification(), 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -201,7 +205,11 @@ export default function Home() {
         {notifications.map((notification) => (
           <div
             key={notification.id}
-            className="bg-success text-success-foreground px-4 py-3 rounded-lg shadow-lg flex items-center gap-3 animate-in slide-in-from-left-5"
+            className={`bg-success text-success-foreground px-4 py-3 rounded-lg shadow-lg flex items-center gap-3 transition-all duration-500 ${
+              notification.isLeaving 
+                ? 'opacity-0 -translate-x-full' 
+                : 'opacity-100 translate-x-0 animate-in slide-in-from-left-5'
+            }`}
             data-testid={`notification-${notification.id}`}
           >
             <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
