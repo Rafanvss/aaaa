@@ -524,7 +524,7 @@ export default function Home() {
               {/* Price */}
               <div className="text-center space-y-2 py-4">
                 <div className="text-2xl font-bold text-foreground" data-testid="text-only-for">
-                  DE <span className="line-through">R$ 97</span> POR APENAS:
+                  DE <span className="line-through text-destructive">R$ 97</span> POR APENAS:
                 </div>
                 <div className="text-6xl md:text-7xl font-bold text-success" data-testid="text-price-new">
                   <sup className="text-3xl md:text-4xl">R$</sup> 14<sup className="text-4xl">,90</sup>
@@ -534,7 +534,7 @@ export default function Home() {
               {/* CTA Button */}
               <Button
                 size="lg"
-                className="w-full text-xl py-7 bg-gradient-to-r from-success to-primary shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
+                className="w-full text-xl py-7 bg-success text-success-foreground shadow-lg transform hover:scale-105 active:scale-95 transition-transform duration-200"
                 data-testid="button-offer-cta"
                 onClick={() => window.location.href = 'https://compraseguradaonline.company/c/5c8639cc22'}
               >
